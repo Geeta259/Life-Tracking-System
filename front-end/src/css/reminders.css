@@ -1,0 +1,68 @@
+.reminders-container {  
+    padding: 10px 30px;
+  }
+  
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+  
+  .goal-card, .task-card {
+    width: calc(25% - 20px); /* 5 cards per row, minus gap */
+    max-width: 300px;
+    min-width: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    overflow: hidden;
+     background-color: rgb(163, 209, 173) !important;
+    color: #000000c9;
+    border: 1px solid #ddd;
+    transition: transform 0.2s;
+  }
+  
+  .goal-card:hover, .task-card:hover {
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 1200px) {
+    .goal-card, .task-card {
+      width: calc(33.333% - 20px); /* 3 cards per row, minus gap */
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .goal-card, .task-card {
+      width: calc(50% - 20px); /* 2 cards per row, minus gap */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .goal-card, .task-card {
+      width: calc(100% - 20px); /* 1 card per row, minus gap */
+      margin: 0 auto; /* Center the card */
+    }
+  }
+  
+  .goal-card .card-body, .task-card .card-body {
+    padding: 5px;
+
+  }
+  
+  .goal-card .card-title, .task-card .card-title {
+    font-size: 18px;
+    font-weight: bold;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+  }
+  
+  .goal-card .card-text, .task-card .card-text {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .task-card {
+    background-color: #ffcccc !important;
+  }
+  
