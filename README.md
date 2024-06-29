@@ -1,4 +1,5 @@
 # Life Tracking System
+LifeTrack is a user-friendly system that helps individuals achieve personal growth and wellness. It includes features like secure login with password recovery, goal setting with progress tracking, fitness monitoring by tracking daily activities and calories, and financial tracking for expenses and income. It also tracks streaks for habit formation and offers a note-taking system for organizing important information.
 
 ## Features
 
