@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Life Tracking System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features
 
-## Available Scripts
+### Authentication and Authorization
+- **JWT Authentication**: Secure user login and session management using JSON Web Tokens.
+- **Forgot Password Module**: Ability for users to reset their passwords via email.
 
-In the project directory, you can run:
+### Goals and Progress Tracking
+- **Goal Management**: Users can create, update, and delete their own goals.
+- **Task Tracking**: Within each goal, tasks can be added to track progress.
+- **Progress Monitoring**: Track completed and pending tasks to achieve goals.
 
-### `npm start`
+### Fitness Tracking
+- **Daily, Weekly, Monthly Tracking**: Monitor fitness activities and calories burned across different time intervals.
+- **Category-wise Monitoring**: Track fitness activities based on different categories (e.g., cardio, strength).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Finance Tracking
+- **Expense and Income Tracking**: Log and categorize expenses and incomes.
+- **Category-wise Analysis**: Understand spending patterns across various expense categories.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Streak Tracking
+- **Yearly Streak**: Track consecutive active days throughout the year.
+- **Monthly Streak**: Monitor monthly activity streaks to maintain consistency.
 
-### `npm test`
+### Note Taking
+- **Note Management**: Users can create and save important notes.
+- **Reminder Integration**: Store notes in a database for easy retrieval and reminders.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
 
-### `npm run build`
+- **Backend**: Developed using Spring Boot for robust and scalable API services.
+- **Authentication**: Implemented JWT for secure authentication and authorization.
+- **Frontend**: Built with React for a dynamic and responsive user interface.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation and Setup
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
+- Java Development Kit (JDK) 11 or higher
+- Node.js and npm/yarn for frontend dependencies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Backend Setup
+1. Clone the repository.
+2. Navigate to the `backend` directory.
+3. Run `./mvnw spring-boot:run` to start the backend server.
 
-### `npm run eject`
+### Frontend Setup
+1. Navigate to the `frontend` directory.
+2. Run `npm install` or `yarn install` to install dependencies.
+3. Run `npm start` or `yarn start` to start the frontend development server.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Configuration
+- Backend: Update `application.properties` with database and security configurations.
+- Frontend: Configure API endpoints in `src/api/config.js`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
+- Access the application at `http://localhost:3000` (frontend) and `http://localhost:8080` (backend).
+- Register, login, and explore various modules to track goals, fitness, finances, streaks, and notes.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+- This project is licensed under the MIT License - see the LICENSE file for details.
