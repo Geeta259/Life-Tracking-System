@@ -127,6 +127,11 @@ The Life Tracking Application significantly improves users' ability to manage va
 Overall, this application serves as a valuable resource for anyone looking to streamline their life management processes and achieve their personal and professional goals more efficiently.
 
 **Screenshots**:
+![Screenshot (458)](https://github.com/Geeta259/Life-Tracking-System/assets/75520947/d7234b25-9635-4c77-a90f-472ab508309b)
+![Screenshot (459)](https://github.com/Geeta259/Life-Tracking-System/assets/75520947/5637618c-3a97-4406-9eda-13c3861c89e6)
+![Screenshot (460)](https://github.com/Geeta259/Life-Tracking-System/assets/75520947/31bb348a-847d-4f30-b353-df3e021a4640)
+![Screenshot (461)](https://github.com/Geeta259/Life-Tracking-System/assets/75520947/846dbe89-bd8b-441c-8a95-e501a8c92d3a)
+![Screenshot (462)](https://github.com/Geeta259/Life-Tracking-System/assets/75520947/bcc40003-6bb6-4f2e-ae9f-0ab39bfaf162)
 ![Screenshot (436)](https://github.com/Geeta259/Life-Tracking-System/assets/75520947/42f03a5c-31f6-44ba-821a-c071a1c5411e)
 ![Screenshot (437)](https://github.com/Geeta259/Life-Tracking-System/assets/75520947/dc7614cc-f16e-4bfd-acd6-2512e5654045)
 ![Screenshot (438)](https://github.com/Geeta259/Life-Tracking-System/assets/75520947/8a17e2e0-ee1f-45dd-8d71-491fe7348adb)
