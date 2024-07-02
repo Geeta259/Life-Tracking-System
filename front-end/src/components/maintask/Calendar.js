@@ -10,6 +10,7 @@ const Calendar = ({ selectedMonth, attendanceData, fetchAttendanceData, fetchAtt
 
   const daysInMonth = new Date(new Date().getFullYear(), selectedMonth, 0).getDate();
   const firstDayOfMonth = new Date(new Date().getFullYear(), selectedMonth - 1, 1).getDay();
+  const today = new Date();
 
   // Initialize daysStatus array with all days set to false initially
   const initialDaysStatus = Array.from({ length: daysInMonth }, () => false);
@@ -70,7 +71,6 @@ const Calendar = ({ selectedMonth, attendanceData, fetchAttendanceData, fetchAtt
         toast.success('Selected day attendance recorded!');
       }
 
-
       // Fetch updated attendance data
       await fetchAttendanceData(selectedMonth);
       await fetchAttendance();
@@ -91,24 +91,25 @@ const Calendar = ({ selectedMonth, attendanceData, fetchAttendanceData, fetchAtt
       daysArray.push(<td key={`empty-${i}`} style={{ border: 'none' }} />);
     }
     for (let day = 1; day <= daysInMonth; day++) {
+      const isFutureDay = new Date(today.getFullYear(), selectedMonth - 1, day) > today;
       const cellStyle = {
         textAlign: 'center',
         verticalAlign: 'middle',
-        cursor: 'pointer',
+        cursor: isFutureDay ? 'not-allowed' : 'pointer', // Change cursor style based on future day
         height: '100px',
-        backgroundColor: daysStatus[day - 1] ? 'green' : 'white', // Example background color change
-        color: daysStatus[day - 1] ? 'white' : 'black', // Example text color change
+      
+    
       };
       
       daysArray.push(
-        <td key={day} style={{ textAlign: 'center', verticalAlign: 'middle', cursor: 'pointer', height: '100px' }} onClick={() => handleDayClick(day)}>
+        <td key={day} style={cellStyle} onClick={() => !isFutureDay && handleDayClick(day)}>
           {day}
           <div>
             <Input
               type="checkbox"
-            
               checked={daysStatus[day - 1]}
-              style={{ backgroundColor: daysStatus[day - 1] ? 'green' : 'white'}}
+              disabled={isFutureDay}
+              style={{ backgroundColor: daysStatus[day - 1] ? 'green' : 'white' }}
               readOnly
             />
           </div>
@@ -129,7 +130,7 @@ const Calendar = ({ selectedMonth, attendanceData, fetchAttendanceData, fetchAtt
 
   return (
     <div>
-      <Table bordered style={{ tableLayout: 'fixed', width: '100%', marginTop: '20px',height:'300px'}}>
+      <Table bordered style={{ tableLayout: 'fixed', width: '100%', marginTop: '20px', height:'300px'}}>
         <thead>
           <tr>
             {['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'].map((day) => (
