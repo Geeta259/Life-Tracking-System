@@ -107,43 +107,8 @@ The backend of the application is built using Spring Boot. It provides RESTful A
 
 - Spring Boot
 - Spring Security (for authentication and authorization)
-- JPA/Hibernate (for database interactions)
-- MySQL/PostgreSQL (database)
-- Lombok (for reducing boilerplate code)
-
-### Structure
-
-- **Controllers**: Handle HTTP requests and responses.
-- **Services**: Contain business logic.
-- **Repositories**: Interface with the database.
-- **Models**: Define the structure of data.
-- **DTOs**: Data Transfer Objects for transferring data between layers.
-
-## Setup and Installation
-
-### Prerequisites
-
-- Node.js and npm (for the frontend)
-- Java JDK (for the backend)
-- MySQL/PostgreSQL database
-
-### Steps
-
-1. **Clone the repository**: `git clone <repository-url>`
-2. **Frontend Setup**:
-   - Navigate to the frontend directory: `cd frontend`
-   - Install dependencies: `npm install`
-   - Start the frontend server: `npm start`
-3. **Backend Setup**:
-   - Navigate to the backend directory: `cd backend`
-   - Configure the database connection in `application.properties`
-   - Build the backend application: `mvn clean install`
-   - Start the backend server: `mvn spring-boot:run`
-
-### Configuration
-
-- **Database Configuration**: Set up the database connection in the `application.properties` file.
-- **Environment Variables**: Configure necessary environment variables for the application.
+- JPA (for database interactions)
+- MySQL (database)
 
 ## Impact and Effectiveness
 
