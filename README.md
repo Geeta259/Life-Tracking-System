@@ -153,3 +153,7 @@ Overall, this application serves as a valuable resource for anyone looking to st
 ![Screenshot (456)](https://github.com/Geeta259/Life-Tracking-System/assets/75520947/0656e313-f5c6-4a90-ab24-0c61d3003814)
 ![Screenshot (457)](https://github.com/Geeta259/Life-Tracking-System/assets/75520947/67177575-7284-4137-9265-81d698b75112)
 
+
+### Video Demo of Life Tracking Application
+- **Direct Link**: https://drive.google.com/file/d/1YNhwqt6Kbmkk8GM1RhmrLbzX0sYufO9F/view?usp=sharing
+
